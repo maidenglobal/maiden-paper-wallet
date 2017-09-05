@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import QArt from 'react-qart';
+import QRCode from 'qrcode.react'
 
 // images
 import logo from './logo.png';
@@ -21,22 +21,32 @@ const App = () => {
 
 const Wallet = ({ address, privKey }) =>
   <div key={address}>
-    <QArt
-      value={address}
-      imagePath={logo.slice(1)}
-      size='300'
-    />
-    <span className='address'>{address}</span>
-    <span className='address'>{privKey}</span>
-    <QArt
-      value={privKey}
-      imagePath={logo}
-      filter='threshold'
-      size='300'
-    />
-    <p>You can share your public address. This is how people can send you Ether.</p>
     <p>This paper wallet has been pre-loaded with Ether. It can be imported into a wallet such as Jaxx to complete the Maiden Challenge!</p>
-    <p>If you complete the challenge, you will receive a reward</p>
+
+    <div className='content-box box-public-address'>
+      <h2>Public Address</h2>
+      <QRCode
+        value={address}
+        size={300}
+        level='H'
+      />
+      <p>You can share your public address. This is how people can send you Ether.</p>
+      <span className='address'>{address}</span>
+    </div>
+
+    <img src={logo} alt='Maiden Logo' className='box-logo'/>
+
+    <div className='content-box box-private-key'>
+      <h2>Private Key</h2>
+      <QRCode
+        value={privKey}
+        size={300}
+        level='H'
+      />
+      <p>This is your private key. Do not share this with anyone or save it anywhere!</p>
+      <span className='address'>{privKey}</span>
+    </div>
+
   </div>
 
 export default App;

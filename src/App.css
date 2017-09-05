@@ -20,12 +20,34 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 24px;
-  /*color: rgb(102,104,142);*/
+  margin-bottom: 0;
+}
+
+p {
+  margin: 10px 0;
 }
 
 .address {
-  color: #333;
+  color: #999;
   font-family: monospace;
   font-size: 18px;
+  word-wrap: break-word;
 }
 
+.content-box {
+  float: left;
+  width: 320px;
+}
+
+.box-public-address h2 {
+  margin-left: 68px;
+}
+
+.box-private-key h2 {
+  margin-left: 90px;
+}
+
+.box-logo {
+  float: left;
+  margin-top: 70px;
+}

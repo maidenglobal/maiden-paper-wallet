@@ -976,7 +976,7 @@ babel-runtime@6.23.0, babel-runtime@^6.22.0:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-runtime@^6.11.6, babel-runtime@^6.18.0, babel-runtime@^6.26.0:
+babel-runtime@^6.18.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -5027,7 +5027,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10:
+prop-types@^15.5.10, prop-types@^15.5.8:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -5078,9 +5078,16 @@ q@^1.1.2:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.0.tgz#dd01bac9d06d30e6f219aecb8253ee9ebdc308f1"
 
-qartjs@^1.0.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/qartjs/-/qartjs-1.1.2.tgz#51653a5a3010889ebd3662fd927c27a6cea7b604"
+qr.js@0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/qr.js/-/qr.js-0.0.0.tgz#cace86386f59a0db8050fa90d9b6b0e88a1e364f"
+
+qrcode.react@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/qrcode.react/-/qrcode.react-0.7.1.tgz#6fc5017f17025048919115581da5e375b0946742"
+  dependencies:
+    prop-types "^15.5.8"
+    qr.js "0.0.0"
 
 qs@6.5.0:
   version "6.5.0"
@@ -5182,13 +5189,6 @@ react-error-overlay@^1.0.10:
     react-dev-utils "^3.1.0"
     settle-promise "1.0.0"
     source-map "0.5.6"
-
-react-qart@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/react-qart/-/react-qart-0.1.2.tgz#42b83eac3dcf7bd21f95e326d0b0228c2fedc1ea"
-  dependencies:
-    babel-runtime "^6.11.6"
-    qartjs "^1.0.2"
 
 react-scripts@1.0.11:
   version "1.0.11"
