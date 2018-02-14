@@ -5,7 +5,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   color: #101010;
-  background-color: #fff;
+  background: url(hexagonal-pattern.jpg);
   line-height: 1.4;
 }
 
@@ -38,7 +38,6 @@ body > div {
 }
 
 .wallet {
-  margin-bottom: 100px;
   overflow: hidden;
 }
 
