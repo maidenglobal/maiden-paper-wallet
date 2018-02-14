@@ -16,7 +16,6 @@ const App = () => {
     {keypairs.map(keypair =>
       <div className='wallet-pair' key={keypair.address}>
         <Wallet address={keypair.address} privKey={keypair.privKey}/>
-        <Wallet address={keypair.address} privKey={keypair.privKey}/>
       </div>
     )}
   </div>
@@ -48,7 +47,7 @@ const Wallet = ({ address, privKey }) =>
         size={300}
         level='H'
       />
-      <p>This is your private key. Do not share this with anyone or save it anywhere!</p>
+      <p>This is your private key. Do not share this with anyone!</p>
       <span className='address'>{privKey}</span>
     </div>
 
