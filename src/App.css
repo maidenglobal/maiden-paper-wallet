@@ -27,6 +27,21 @@ p {
   margin: 10px 0;
 }
 
+body > div {
+  transform: scale3d(0.5, 0.5, 0.5);
+  transform-origin: 0 0;
+}
+
+.wallet-pair {
+  width: 1150px;
+  page-break-inside: avoid;
+}
+
+.wallet {
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
 .address {
   color: #999;
   font-family: monospace;
