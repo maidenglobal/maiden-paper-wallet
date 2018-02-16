@@ -38,7 +38,10 @@ const Wallet = ({ address, privKey }) =>
       <span className='address'>{address}</span>
     </div>
 
-    <img src={logo} alt='Maiden Logo' className='box-logo'/>
+    <div className='content-middle'>
+      <img src={logo} alt='Maiden Logo' className='box-logo'/>
+      <p className='logo-caption'>Maiden</p>
+    </div>
 
     <div className='content-box box-private-key'>
       <h2>Private Key</h2>

@@ -1,12 +1,13 @@
 * { box-sizing: border-box; }
 img { max-width: 100%; }
 body {
+  background: url(hexagonal-pattern.jpg);
   font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
   font-weight: 300;
   font-size: 18px;
   color: #101010;
-  background: url(hexagonal-pattern.jpg);
   line-height: 1.4;
+  margin: 0;
 }
 
 h1, h2 {
@@ -33,8 +34,14 @@ body > div {
 }
 
 .wallet-pair {
-  width: 1150px;
-  page-break-inside: avoid;
+  width: 1300px;
+  padding: 50px;
+  /*page-break-inside: avoid;*/
+  overflow: hidden;
+}
+
+.wallet-pair:nth-child(3n) {
+  margin-top: 100px;
 }
 
 .wallet {
@@ -53,15 +60,31 @@ body > div {
   width: 320px;
 }
 
+.content-middle {
+  float: left;
+  margin-top: 100px;
+}
+
 .box-public-address h2 {
-  margin-left: 68px;
+  margin-left: 55px;
+  letter-spacing: 2px;
 }
 
 .box-private-key h2 {
-  margin-left: 90px;
+  margin-left: 80px;
+  letter-spacing: 2px;
 }
 
 .box-logo {
-  float: left;
-  margin-top: 70px;
+  margin-right: 15px;
+}
+
+.logo-caption {
+  margin-top: -5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 300;
+  font-family: "Helvetica Neue";
+  letter-spacing: 12px;
 }
